@@ -3,7 +3,6 @@ var webdriver = require('selenium-webdriver');
 var driver = new webdriver.Builder().forBrowser('chrome').build();//创建一个
 const By  = webdriver.By;
 driver.get("http://www.baidu.com");//打开百度网页
-<<<<<<< HEAD
 
 
 driver.findElement(By.xpath('//*[@id="u1"]/a[3]')).click();
@@ -19,13 +18,3 @@ driver.findElement({id: "su"}).click();
 driver.sleep(10000);
 driver.findElement(By.xpath('//*[@id="1"]/div[1]/div/div[2]/div[2]/div/div[1]/form/input[2]')).sendKeys('纽约');
 driver.findElement(By.xpath('//*[@id="1"]/div[1]/div/div[2]/div[2]/div/div[1]/form/input[2]')).submit();
-
-
-=======
-driver.findElement({id:"kw"}).sendKeys("F1");
-driver.findElement({id:"su"}).click();
-driver.quit();//关闭浏览器
-driver.findElement({id:"kw"}).sendKeys("F1");
-driver.findElement({id:"su"}).click();
-driver.quit();//关闭浏览器
->>>>>>> cca73c419880276d23dff2fdedba0048192901b9
