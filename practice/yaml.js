@@ -1,0 +1,6 @@
+const yaml =require('js-yaml')
+const fs =require('fs')
+let path =require('path')
+let yamlpath = path.join(__dirname,'a.yaml')
+let user = yaml.safeLoad(fs.readFileSync(yamlpath))
+console.log(user)
